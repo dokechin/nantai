@@ -68,11 +68,11 @@ export default {
       var length2 = card.length
       var cnt = Number(this.$route.params.id)
       var pcnt = Number(this.$route.params.id)
-      var pcnt2 = 0
-      for (var i = 1; i < length1; i++) {
+      for (var i = 0; i < length1; i++) {
+        pcnt = pcnt - 1
         for (var j = 0; j < length2; j++) {
           if (pcnt > 0) {
-            if (card[j].id == quiz[pcnt - i].id) {
+            if (card[j].id == quiz[pcnt].id) {
               return card[j].id - 1
             }
           }

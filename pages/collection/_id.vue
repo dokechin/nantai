@@ -17,13 +17,13 @@
             <div v-for="n in 5" :key="n">
               <div v-if="remaining(n + icnt)=='Z'">
                 <div class="col-12">
-                  <div class="card-deck" style="width: 10rem;height: 14rem;"/>
+                  <div class="card-deck" style="width: 10rem;height: 15rem;"/>
                 </div>
               </div>
               <div v-else-if="remaining(n + icnt)=='Y'">
                 <div class="col-12">
                   <div class="card-deck">
-                    <div class="card alert-warning border-secondary" style="width: 10rem;height: 14rem;">
+                    <div class="card alert-warning border-secondary" style="width: 10rem;height: 15rem;">
                       <div class="card-body">
                         <p class="card-text">&nbsp;</p>
                         <h3><p class="card-title">NO PHOTO</p></h3>
@@ -35,9 +35,9 @@
               <div v-else>
                 <div class="col-12">
                   <div class="card-deck">
-                    <nuxt-link :to="'/collection/details/' + Number(n + icnt - 1)" class="card alert-warning border-secondary" style="width: 10rem;height: 14rem;">
+                    <nuxt-link :to="'/collection/details/' + Number(n + icnt - 1)" class="card alert-warning border-secondary" style="width: 10rem;height: 15rem;">
                       <div class="card-body">
-                        <p class="card-text mb-1" align="right"><small class="text-dark">{{ "⭐ ".repeat(quizzes[n + icnt - 1].rare) }}No.{{ quizzes[n + icnt - 1].id }}</small></p>
+                        <p class="card-text mb-1" align="right"><small class="star">{{ "★ ".repeat(quizzes[n + icnt - 1].rare) }}No.{{ quizzes[n + icnt - 1].id }}</small></p>
                         <p class="card-text mb-1 text-dark" style="fontSize :60%;">{{ quizzes[n + icnt - 1].town_yomi }}</p>
                         <div v-if="quizzes[n + icnt - 1].town.length > 5">
                           <h6><p class="card-title text-dark">{{ quizzes[n + icnt - 1].town }}</p></h6>
@@ -71,7 +71,7 @@
               <div v-else-if="remaining(n + 5 + icnt)=='Y'">
                 <div class="col-12">
                   <div class="card-deck">
-                    <div class="card alert-warning border-secondary" style="width: 10rem; height: 14rem;">
+                    <div class="card alert-warning border-secondary" style="width: 10rem; height: 15rem;">
                       <div class="card-body">
                         <p class="card-text">&nbsp;</p>
                         <h3><p class="card-title">NO PHOTO</p></h3>
@@ -83,9 +83,9 @@
               <div v-else>
                 <div class="col-12">
                   <div class="card-deck">
-                    <nuxt-link :to="'/collection/details/' + Number(n + icnt + 4)" class="card alert-warning border-secondary" style="width: 10rem;height: 14rem;">
+                    <nuxt-link :to="'/collection/details/' + Number(n + icnt + 4)" class="card alert-warning border-secondary" style="width: 10rem;height: 15rem;">
                       <div class="card-body">
-                        <p class="card-text mb-1" align="right"><small class="text-dark">{{ "⭐ ".repeat(quizzes[n + icnt + 4].rare) }}No.{{ quizzes[n + icnt + 4].id }}</small></p>
+                        <p class="card-text mb-1" align="right"><small class="star">{{ "★ ".repeat(quizzes[n + icnt + 4].rare) }}No.{{ quizzes[n + icnt + 4].id }}</small></p>
                         <p class="card-text mb-1 text-dark" style="fontSize :60%;">{{ quizzes[n + icnt + 4].town_yomi }}</p>
                         <div v-if="quizzes[n + icnt + 4].town.length > 5">
                           <h6><p class="card-title text-dark">{{ quizzes[n + icnt + 4].town }}</p></h6>
@@ -205,6 +205,10 @@ export default {
   font-size: 20px; /* 文字サイズ */
   background-color: #efffff; /* 表 背景色 */
   border: 1px solid aqua; /* 表 枠線 */
+}
+.star {
+  font-size: 15px;
+  color: blue;
 }
 .card-columns {
   @include media-breakpoint-only(lg) {
