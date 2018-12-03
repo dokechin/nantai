@@ -41,15 +41,27 @@
     <b-modal id="modal1" title="遊び方">
       <GameUsage/>
     </b-modal>
+    <div class="row justify-content-center">
+      <div class="col-6 lign-items-center">
+        <b-btn v-b-modal.modal2 class="kiyaku-btn btn btn-primary btn-block badge-pill btn-info">利用規約</b-btn>
+      </div>
+    </div>
+    <div class="row">
+      <br>
+    </div>
+    <b-modal id="modal2" class ="modalk" title="利用規約" ok-only="false" ok-title="閉じる">
+      <KIYAKU/>
+    </b-modal>
   </section>
 </template>
 
 <script>
 import GameUsage from '~/components/game-usage.vue'
-
+import KIYAKU from '~/components/kiyaku.vue'
 export default {
   components: {
-    GameUsage
+    GameUsage,
+    KIYAKU
   },
   data() {
     return {
@@ -64,10 +76,22 @@ export default {
 </script>
 <style>
 .start_btn {
+  font-size: 20px;
+  font-weight: bold;
   background-color: #036a9e;
 }
 .collection_btn,
 .usage-btn {
+  font-size: 20px;
+  font-weight: bold;
   background-color: #1e98b9;
+}
+.kiyaku-btn {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #1e98b9;
+}
+#modal2 {
+  width: 100%;
 }
 </style>
