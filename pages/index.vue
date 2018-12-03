@@ -49,7 +49,7 @@
     <div class="row">
       <br>
     </div>
-    <b-modal id="modal2" class ="modalk" title="利用規約">
+    <b-modal id="modal2" class ="modalk" title="利用規約" ok-only="false" ok-title="閉じる">
       <KIYAKU/>
     </b-modal>
   </section>
