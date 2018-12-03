@@ -93,7 +93,7 @@
                         <div v-else>
                           <h5><p class="card-title text-dark">{{ quizzes[n + icnt + 4].town }}</p></h5>
                         </div>
-                        <div v-if="quizzes[n + icnt + 4].spot.length > 20">
+                        <div v-if="quizzes[n + icnt + 4].spot.length > 11">
                           <small class="text-dark" style="fontSize :60%;">{{ quizzes[n + icnt + 4].spot.substr(0,10) }}...</small>
                         </div>
                         <div v-else>
