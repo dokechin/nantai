@@ -72,7 +72,7 @@ export default {
       for (var i = 0; i < length1; i++) {
         pcnt = pcnt - 1
         for (var j = 0; j < length2; j++) {
-          if (pcnt > 0) {
+          if (pcnt > -1) {
             if (card[j].id == quiz[pcnt].id) {
               return card[j].id - 1
             }
