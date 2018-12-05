@@ -3,7 +3,7 @@
     <div class="answer">
       <div class="col"/>&nbsp;
       <div class="row justify-content-center">
-        <div class="col-6">
+        <div class="col-md-7">
           <Card
             :rare="card[id].rare"
             :id="card[id].id"
@@ -14,7 +14,8 @@
             :map_img="card[id].map_img"
             :spot="card[id].spot"
             :spot_img="card[id].spot_img"
-            :spot_guide="card[id].spot_guide"/>
+            :spot_guide="card[id].spot_guide"
+            class="mx-3" />
           <br>
         </div>
         <div class="col-md-5 mt-1">
@@ -71,7 +72,7 @@ export default {
       for (var i = 0; i < length1; i++) {
         pcnt = pcnt - 1
         for (var j = 0; j < length2; j++) {
-          if (pcnt > 0) {
+          if (pcnt > -1) {
             if (card[j].id == quiz[pcnt].id) {
               return card[j].id - 1
             }
