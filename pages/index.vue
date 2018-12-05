@@ -32,7 +32,7 @@
     </div>
     <div class="row justify-content-center">
       <div class="col-6 lign-items-center">
-        <b-btn v-b-modal.modal1 class="usage-btn btn btn-primary btn-block badge-pill btn-info">遊び方</b-btn>
+        <a href="game-usage.pdf" target="_blank" class="usage-btn btn btn-primary btn-block badge-pill btn-info" role="button"><b>遊び方</b></a>
       </div>
     </div>
     <div class="row">
@@ -49,7 +49,7 @@
     <div class="row">
       <br>
     </div>
-    <b-modal id="modal2" class ="modalk" title="利用規約" ok-only="false" ok-title="閉じる">
+    <b-modal id="modal2" ok-only="false" class ="modalk" title="利用規約" ok-title="閉じる">
       <KIYAKU/>
     </b-modal>
   </section>
