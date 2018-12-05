@@ -36,7 +36,7 @@
         <div class="col-5">
           <b-btn v-b-modal.modal1 class="hint-btn badge-pill" @click="openModal">ヒントをみる</b-btn>
         </div>
-        <b-modal id="modal1" class ="modalk" title="ヒント" ok-only="false" ok-title="閉じる" hide-header="false">
+        <b-modal id="modal1" ok-only="false" class="modalk" title="ヒント" ok-title="閉じる" >
           <HINTO :hinto="hinto"/>
         </b-modal>
         <div class="col"/>
