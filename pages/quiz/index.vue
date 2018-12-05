@@ -2,7 +2,7 @@
   <section class="container">
     <div class="row">
       <div class="col map-parent">
-        <img id="map" src="japanmap/JapanMap.png" usemap="#image-map" alt="">
+        <img id="map" src="japanmap/JapanMap.png" usemap="#image-map" alt="" @load="load">
         <map name="image-map">
           <nuxt-link v-if="remainCount(22) > 0" to="/quiz/pref/22">
             <area title="静岡" shape="rect" coords="391,455,445,495"
@@ -63,7 +63,13 @@ export default {
       })
     }
   },
+  updated() {
+    $(window).trigger('resize')
+  },
   methods: {
+    load: function() {
+      $(window).trigger('resize')
+    },
     cImg: function(id) {
       var imgEle = document.getElementById('map')
       imgEle.src = 'japanmap/JapanMap' + id + '.png'
