@@ -133,7 +133,31 @@ module.exports = {
         '/collection/53',
         '/collection/54',
         '/collection/55',
-        '/collection/56'
+        '/collection/56',
+        '/collection/57',
+        '/collection/58',
+        '/collection/59',
+        '/collection/60',
+        '/collection/61',
+        '/collection/62',
+        '/collection/63',
+        '/collection/64',
+        '/collection/65',
+        '/collection/66',
+        '/collection/67',
+        '/collection/68',
+        '/collection/69',
+        '/collection/70',
+        '/collection/71',
+        '/collection/72',
+        '/collection/73',
+        '/collection/74',
+        '/collection/75',
+        '/collection/76',
+        '/collection/77',
+        '/collection/78',
+        '/collection/79',
+        '/collection/80'
       ]
     }
   }
