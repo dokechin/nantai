@@ -3,8 +3,8 @@
     <div class="answer">
       <div class="row mb-2">
         <div class="col"/>
-        <div class="col-10 text-center question-text">
-          <span v-if="type==0">この地名の読み方、わかるかな?</span><span v-if="type==1"><span class="correct-text">正解！</span>カードをゲットしました</span><span v-if="type==2"><span class="incorrect-text">不正解！</span>もう一度答えてみよう</span>
+        <div class="col-10 text-center">
+          <span v-if="type==0" class="question-text">この地名の読み方、わかるかな?</span><span v-if="type==1" class="question-text"><span class="question-text correct-text">正解！</span>カードをゲットしました</span><span v-if="type==2" class="question-text"><span class="question-text incorrect-text">不正解！</span>もう一度答えてみよう</span>
         </div>
         <div class="col"/>
       </div>

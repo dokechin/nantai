@@ -112,10 +112,6 @@ export default {
 .answer {
   background-color: #efffff;
 } /* 左右余白 */
-.question-text {
-  font-size: 20px;
-  color: #534741;
-}
 .social-btn {
   width: 30px;
 }
